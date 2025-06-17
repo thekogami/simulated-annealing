@@ -35,4 +35,11 @@ public class AckleyFunction implements Function{
             }
         }
     }
+
+    @Override
+    public void generateRandomSolution(double[] solution) {
+        for(int i = 0; i < solution.length; i++){
+            solution[i] = MIN_VALUE + (MAX_VALUE - MIN_VALUE) * Math.random();
+        }
+    }
 }

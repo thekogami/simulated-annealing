@@ -25,4 +25,11 @@ public class BukinFunctionN6 implements Function{
             }
         }
     }
+
+    @Override
+    public void generateRandomSolution(double[] solution) {
+        for(int i = 0; i < 2; i++){
+            solution[i] = MIN_VALUE[i] + (MAX_VALUE[i] - MIN_VALUE[i]) * Math.random();
+        }
+    }
 }
