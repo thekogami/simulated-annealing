@@ -7,8 +7,8 @@ import com.leandersonandre.optimization.sa.operator.GaussianOperator;
 public class Main {
     public static void main(String[] args) {
         SimulatedAnnealing sa = new SimulatedAnnealing(
-                FunctionFactory.getInstance().getFunction("ACKLEY"),
-                new GaussianOperator(.3),
+                FunctionFactory.getInstance().getFunction("BUKIN6"),
+                new GaussianOperator(.5),
                 0.96,
                 200,
                 100_000,
