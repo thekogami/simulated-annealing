@@ -7,7 +7,7 @@ import com.leandersonandre.optimization.sa.operator.GaussianOperator;
 public class Main {
     public static void main(String[] args) {
         SimulatedAnnealing sa = new SimulatedAnnealing(
-                FunctionFactory.getInstance().getFunction("BUKIN6"),
+                FunctionFactory.getInstance().getFunction("CROSSINTRAY"),
                 new GaussianOperator(.5),
                 0.96,
                 200,
