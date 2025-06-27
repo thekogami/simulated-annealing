@@ -3,6 +3,7 @@ package com.leandersonandre.optimization.function;
 /**
  * Drop-Wave Function
  * https://www.sfu.ca/~ssurjano/drop.html
+ * 
  */
 public class DropWaveFunction implements Function {
   private final static double MIN_VALUE[] = { -5.12, -5.12 };

@@ -3,6 +3,7 @@ package com.leandersonandre.optimization.function;
 /**
  * Cross-in-Tray Function
  * https://www.sfu.ca/~ssurjano/crossit.html
+ * 
  */
 public class CrossInTrayFunction implements Function {
   private final static double MIN_VALUE[] = { -10, -10 };
