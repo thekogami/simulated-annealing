@@ -3,7 +3,6 @@ package com.leandersonandre.optimization.function;
 /**
  * Drop-Wave Function
  * https://www.sfu.ca/~ssurjano/drop.html
- * 
  */
 public class DropWaveFunction implements Function {
   private final static double MIN_VALUE[] = { -5.12, -5.12 };
@@ -11,6 +10,9 @@ public class DropWaveFunction implements Function {
 
   @Override
   public double evaluate(double[] x) {
+    if (x.length != 2) {
+      throw new IllegalArgumentException("DropWaveFunction requires a 2-dimensional input vector.");
+    }
     validateAndFixDomain(x);
     double x1 = x[0];
     double x2 = x[1];
@@ -33,7 +35,7 @@ public class DropWaveFunction implements Function {
 
   @Override
   public void generateRandomSolution(double[] solution) {
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < solution.length; i++) {
       solution[i] = MIN_VALUE[i] + (MAX_VALUE[i] - MIN_VALUE[i]) * Math.random();
     }
   }

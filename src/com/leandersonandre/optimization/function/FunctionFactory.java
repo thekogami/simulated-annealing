@@ -18,8 +18,8 @@ public class FunctionFactory {
         return switch (functionName) {
             case "ACKLEY" -> new AckleyFunction();
             case "BUKIN6" -> new BukinFunctionN6();
-            case "CROSSINTRAY" -> new CrossInTrayFunction();
             case "DROPWAVE" -> new DropWaveFunction();
+            case "RASTRIGIN" -> new RastriginFunction();
             default -> throw new IllegalArgumentException("Unknown function name: " + functionName);
         };
     }
